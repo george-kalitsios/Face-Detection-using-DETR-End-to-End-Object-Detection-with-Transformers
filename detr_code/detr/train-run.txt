@@ -1,0 +1,4 @@
+TRAINING: python3 main.py --dataset_file FACE --data_path ../dataset/ --output_dir facelog1 --resume weights/detr-r50-e632da11.pth 
+--epochs 100 --batch_size 2 
+
+TESTING: python3 VisualizeFacePredictions.py --data_path ../dataset/  --resume facelog1/checkpoint.pth --dataset_file face
